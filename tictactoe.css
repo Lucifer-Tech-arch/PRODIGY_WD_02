@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+   /* background-color: rgb(9, 151, 61);*/
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(bg.jpg);
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+
+   
+    color: white;
+    font-family: cursive;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3vmin;
+}
+
+.btn {
+    height: 19vmin;
+    width: 19vmin;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 2px 2px rgb(71, 67, 67);
+    font-size: 46px;
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    border-color: rgb(255, 0, 0);
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:850px) {
+    .options{
+        flex-direction: column;
+    }
+    
+    
+}
+
+.reset {
+    cursor: pointer;
+    height: 39px;
+    margin: 10px 20px;
+    width: 98px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.reset:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.msg {
+    font-size: 35px;
+    color: rgb(88, 224, 3);
+
+}
+
+.hide {
+    display: none;
+}
